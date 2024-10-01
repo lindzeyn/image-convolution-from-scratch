@@ -84,11 +84,8 @@ def convolve2d(image, kernel):
     image_padded = np.zeros((image.shape[0] + 2, image.shape[1] + 2))
     image_padded[1:-1, 1:-1] = image
 
-    # Loop over every pixel of the image
-    for x in range(image.shape[1]):
-        for y in range(image.shape[0]):
-            # element-wise multiplication of the kernel and the image
-            output[y, x]=(kernel * image_padded[y: y+3, x: x+3]).sum()
+    # Loop over every pixel of the image to perform element-wise multiplication of the kernel and the image
+    # YOUR CODE HERE
 
     return output
 
