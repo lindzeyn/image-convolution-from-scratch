@@ -16,6 +16,7 @@ We can load and plot the image using opencv library in python:
 
 ```python
 import cv2
+import numpy as np
 def load_image(image_path):
     """
     Load the image using opencv
